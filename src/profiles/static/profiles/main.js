@@ -26,7 +26,7 @@ profileForm.addEventListener("submit", e=>{
             <img src="${response.avatar}" class="rounded" height="200px" width="auto" alt="${response.user}">
             `
             handleAlerts('success', 'Profile updated!')
-            bioInput.value = response.value
+            bioInput.value = response.bio
         },
         error: function(error){
             console.log("error")
