@@ -9,7 +9,7 @@ def action_permission(func):
         post = Post.objects.get(pk=pk)
         profile = Profile.objects.get(user=request.user)
 
-        if profile.user == post.profile.user:
+        if profile.user == post.author.user:
             return func(request, **kwargs)
         else:
             return redirect("posts:main-board")

@@ -2,3 +2,4 @@
 src/.vscode/*
 *.pyc
 src/db.sqlite3
+src/media/*
