@@ -69,8 +69,8 @@ updateForm.addEventListener("submit", e=>{
         },
         success: function(response){
             handleAlerts('success', 'Post updated!')
-            title.textContent = resposne.title
-            body.textContent = resposne.body
+            title.textContent = response.title
+            body.textContent = response.body
         },
         error: function(error){
             console.log(error)
